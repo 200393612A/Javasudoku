@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/fxml/1" fx:controller="scrabble.points.generator.ScrabbleFXMLDocumentController">
+    <children>
+        <Label alignment="CENTER" layoutX="56.0" layoutY="14.0" prefHeight="56.0" prefWidth="373.0" text="Scrabble points Generator" textAlignment="CENTER" textFill="#1919f2">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Label>
+        <Label layoutX="554.0" layoutY="21.0" text="Total Points :">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Label fx:id="points" layoutX="691.0" layoutY="21.0" text="N/A">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <TextField fx:id="wordCheck" layoutX="57.0" layoutY="80.0" prefHeight="42.0" prefWidth="319.0" stylesheets="@application.css" />
+        <Button fx:id="subButton" layoutX="427.0" layoutY="84.0" mnemonicParsing="false" onAction="#submitWord" prefHeight="34.0" prefWidth="96.0" text="Submit" />
+        <Button alignment="CENTER" layoutX="57.0" layoutY="162.0" mnemonicParsing="false" text="A" />
+        <Label fx:id="lblA" alignment="CENTER" layoutX="66.0" layoutY="198.0" text="9" textAlignment="CENTER" />
+        <Button layoutX="96.0" layoutY="162.0" mnemonicParsing="false" text="B" />
+        <Label fx:id="lblB" layoutX="103.0" layoutY="198.0" text="2" />
+        <Button layoutX="135.0" layoutY="162.0" mnemonicParsing="false" text="C" />
+        <Label fx:id="lblC" layoutX="142.0" layoutY="199.0" text="2" />
+        <Button layoutX="176.0" layoutY="163.0" mnemonicParsing="false" text="D" />
+        <Label fx:id="lblD" layoutX="183.0" layoutY="199.0" text="4" />
+        <Button layoutX="215.0" layoutY="163.0" mnemonicParsing="false" text="E" />
+        <Label fx:id="lblE" layoutX="219.0" layoutY="199.0" text="12" />
+        <Button layoutX="254.0" layoutY="164.0" mnemonicParsing="false" text="F" />
+        <Label fx:id="lblF" layoutX="260.0" layoutY="199.0" text="2" />
+        <Button layoutX="290.0" layoutY="164.0" mnemonicParsing="false" text="G" />
+        <Label fx:id="lblG" layoutX="298.0" layoutY="199.0" text="3" />
+        <Button layoutX="328.0" layoutY="164.0" mnemonicParsing="false" text="H" />
+        <Label fx:id="lblH" layoutX="337.0" layoutY="200.0" text="2" />
+        <Button layoutX="368.0" layoutY="164.0" mnemonicParsing="false" text="I" />
+        <Label fx:id="lblI" layoutX="374.0" layoutY="200.0" text="8" />
+        <Button layoutX="409.0" layoutY="164.0" mnemonicParsing="false" text="J" />
+        <Label fx:id="lblJ" layoutX="416.0" layoutY="199.0" text="1" />
+        <Button layoutX="448.0" layoutY="163.0" mnemonicParsing="false" text="K" />
+        <Label fx:id="lblK" layoutX="456.0" layoutY="199.0" text="1" />
+        <Button layoutX="487.0" layoutY="164.0" mnemonicParsing="false" text="L" />
+        <Label fx:id="lblL" layoutX="495.0" layoutY="200.0" text="4" />
+        <Button layoutX="58.0" layoutY="233.0" mnemonicParsing="false" text="N" />
+        <Label fx:id="lblN" layoutX="66.0" layoutY="269.0" text="6" />
+        <Button layoutX="97.0" layoutY="233.0" mnemonicParsing="false" text="O" />
+        <Label fx:id="lblO" layoutX="106.0" layoutY="269.0" text="8" />
+        <Button layoutX="136.0" layoutY="234.0" mnemonicParsing="false" text="P" />
+        <Label fx:id="lblP" layoutX="144.0" layoutY="270.0" text="2" />
+        <Button layoutX="177.0" layoutY="234.0" mnemonicParsing="false" text="Q" />
+        <Label fx:id="lblQ" layoutX="186.0" layoutY="270.0" text="1" />
+        <Button layoutX="216.0" layoutY="234.0" mnemonicParsing="false" text="R" />
+        <Label fx:id="lblR" layoutX="224.0" layoutY="270.0" text="6" />
+        <Button layoutX="255.0" layoutY="235.0" mnemonicParsing="false" text="S" />
+        <Label fx:id="lblS" layoutX="262.0" layoutY="271.0" text="4" />
+        <Button layoutX="291.0" layoutY="233.0" mnemonicParsing="false" text="T" />
+        <Label fx:id="lblT" layoutX="299.0" layoutY="269.0" text="6" />
+        <Button layoutX="330.0" layoutY="233.0" mnemonicParsing="false" text="U" />
+        <Label fx:id="lblU" layoutX="339.0" layoutY="269.0" text="4" />
+        <Button layoutX="369.0" layoutY="234.0" mnemonicParsing="false" text="V" />
+        <Label fx:id="lblV" layoutX="378.0" layoutY="270.0" text="2" />
+        <Button  layoutX="410.0" layoutY="234.0" mnemonicParsing="false" text="W" />
+        <Label fx:id="lblW" layoutX="420.0" layoutY="270.0" text="2" />
+        <Button  layoutX="449.0" layoutY="234.0" mnemonicParsing="false" text="X" />
+        <Label fx:id="lblX" layoutX="456.0" layoutY="270.0" text="1" />
+        <Button  layoutX="488.0" layoutY="235.0" mnemonicParsing="false" text="Y" />
+        <Label fx:id="lblY" layoutX="496.0" layoutY="271.0" text="2" />
+        <Button layoutX="530.0" layoutY="235.0" mnemonicParsing="false" text="Z" />
+        <Label fx:id="lblZ" layoutX="539.0" layoutY="271.0" text="1" />
+        <HBox fx:id="previousWord" layoutX="46.0" layoutY="335.0" prefHeight="154.0" prefWidth="727.0" />
+        <Label layoutX="52.0" layoutY="318.0" text="Previous Words :" />
+        <Label fx:id="errorMsg" layoutX="52.0" layoutY="130.0" textFill="RED">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <VBox layoutX="528.0" layoutY="134.0" prefHeight="85.0" prefWidth="51.0">
+            <children>
+                <Button mnemonicParsing="false" prefHeight="46.0" prefWidth="50.0" text="M" />
+                <Label fx:id="lblM" alignment="CENTER" prefHeight="35.0" prefWidth="51.0" text="2" textAlignment="CENTER">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Label>
+            </children>
+            <opaqueInsets>
+                <Insets bottom="5.0" />
+            </opaqueInsets>
+        </VBox>
+    </children>
+</AnchorPane>
